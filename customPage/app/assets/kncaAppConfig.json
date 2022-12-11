@@ -1,0 +1,7 @@
+{
+    "WEBVIEW_URL":"https://kornft.org/customPage/app/?p=intro",
+    "EXITAPP_PAGES":["intro","home"],
+    "VERSION" : "1.0",
+    "UPDATE_LINK_ANDROID"  : "https://play.google.com/",
+    "UPDATE_LINK_IOS" : "https://www.apple.com/kr/app-store/"
+}

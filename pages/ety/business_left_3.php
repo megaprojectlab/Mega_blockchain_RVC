@@ -1,0 +1,227 @@
+<?php
+include_once('./_common.php');
+include_once(G5_THEME_PATH.'/SF.lib.php');
+?>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+        <title>SOFTZONE - 소프트존 반응형 홈페이지 템플릿 비즈니스 6 페이지</title>
+
+        <link href="<?php echo G5_THEME_URL ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- font awesome for icons -->
+        <link href="<?php echo G5_THEME_URL ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- flex slider css -->
+        <link href="<?php echo G5_THEME_URL ?>/css/flexslider.css" rel="stylesheet" type="text/css" media="screen">
+        <!-- animated css  -->
+        <link href="<?php echo G5_THEME_URL ?>/css/animate.css" rel="stylesheet" type="text/css" media="screen"> 
+        <!-- Revolution Style-sheet -->
+        <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL ?>/rs-plugin/css/settings.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo G5_THEME_URL ?>/css/rev-style.css">
+        <!--owl carousel css-->
+        <link href="<?php echo G5_THEME_URL ?>/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="<?php echo G5_THEME_URL ?>/owl-carousel/assets/owl.theme.default.css" rel="stylesheet" type="text/css" media="screen">
+        <!--mega menu -->
+        <link href="<?php echo G5_THEME_URL ?>/css/yamm.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="<?php echo G5_THEME_URL ?>/css/bootstrap-select.css">
+        <!-- slide -->
+		<link href="<?php echo G5_THEME_URL ?>/slide/responsive-slider.css" rel="stylesheet">
+        <!--cube css-->
+        <link href="<?php echo G5_THEME_URL ?>/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css">
+		<!-- chart -->
+		<link href="<?php echo G5_THEME_URL ?>/morris/morris.css" rel="stylesheet" type="text/css" media="screen">
+        <!-- custom css-->
+        <link href="<?php echo G5_THEME_URL ?>/css/style_aqours.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="<?php echo G5_THEME_URL ?>/css/common.css" rel="stylesheet" type="text/css" media="screen">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+	</head>
+		<?php
+		include_once(G5_THEME_PATH.'/navigation.php');
+		?>
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4>Business</h4>
+                    </div>
+                    <div class="col-sm-6 hidden-xs text-right">
+                        <ol class="breadcrumb">
+                            <li><a href="<?php echo G5_URL?>">Home</a></li>
+                            <li>Business</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div><!--breadcrumbs-->
+
+		<div class="divide80 mobile-none"></div>
+        <div class="container">
+            <div class="row" style="overflow: hidden;">
+                <div class="col-sm-3" style="overflow-y: auto;">
+					<?php include_once(G5_THEME_PATH.'/left_menu.php');?>
+                </div><!--sidebar col end-->
+                <div class="col-sm-9">
+
+				<!-- left start -->
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="heading">Business</h3>
+							<div class="divide20"></div>
+						</div>
+					</div>
+					<!--<h2 class="line">Item introduction</h2>-->
+
+
+					<div class="about">
+						<div class="row">
+							<div class="row-slider">
+								<div class="col-lg-12 mar-bot30">
+									<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+										<div class="slides" data-group="slides">
+											<ul>
+						
+												<div class="slide-body" data-group="slide">
+													<li><img alt="" class="img-responsive" src="https://via.placeholder.com/847x476" width="100%"  /></li>
+													<li><img alt="" class="img-responsive" src="https://via.placeholder.com/847x476" width="100%"  /></li>
+													<li><img alt="" class="img-responsive" src="https://via.placeholder.com/847x476" width="100%"  /></li>
+									
+												</div>
+											</ul>
+												<a class="slider-control left" href="#" data-jump="prev"><i class="fa fa-angle-left fa-2x"></i></a>
+												<a class="slider-control right" href="#" data-jump="next"><i class="fa fa-angle-right fa-2x"></i></a>
+										
+										</div>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</div><!-- //about -->
+
+
+					<div class="divide80"></div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="heading">Platform</h3>
+							<div class="divide20"></div>
+						</div>
+					</div>
+					<div class="row wow animated bounceInUp animated" data-wow-delay="0.2s">
+						<div class="col-md-8 no-padding">
+							  <!-- BAR CHART -->
+							  <div class="box box-success">
+								<div class="box-header with-border">
+								  <div class="box-tools pull-right"></div>
+								</div>
+								<div class="box-body chart-responsive">
+								  <div class="chart" id="bar-chart" style="height: 300px;"></div>
+								</div>
+								<!-- /.box-body -->
+							  </div>
+							  <!-- /.box -->
+							  <div class="divide20"></div>
+						</div>
+						<div class="col-md-4">
+							<p style='padding-top:20px'>
+								1~2년 전만 해도 수많은 악성코드의 한 종류에 불과했던 랜섬웨어는 현재 막대한 피해를 동반하며 전세계를 휩쓰는 광풍이 되었다. 이와 관련해 안랩 시큐리티대응센터(AhnLab Security Emergency-response Center, 이하 ASEC)는 2017년 2분기 ASEC 리포트를 통해 2017년 상반기 랜섬웨어 동향을 발표할 예정이다.
+							</p>
+						</div>
+					</div>
+
+
+                </div>
+            </div>
+        </div><!--left sidebar container-->
+
+		<div class="divide80"></div>
+
+		<?php
+		include_once(G5_THEME_PATH."/footer.php");
+		?>
+        <!--must need plugin jquery-->
+        <script src="<?php echo G5_THEME_URL ?>/js/jquery.min.js"></script>        
+        <!--bootstrap js plugin-->
+        <script src="<?php echo G5_THEME_URL ?>/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>       
+        <!--easing plugin for smooth scroll-->
+        <script src="<?php echo G5_THEME_URL ?>/js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+        <!--sticky header-->
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <!--flex slider plugin-->
+        <script src="<?php echo G5_THEME_URL ?>/js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <!--parallax background plugin-->
+        <script src="<?php echo G5_THEME_URL ?>/js/jquery.stellar.min.js" type="text/javascript"></script>
+        
+        
+        <!--digit countdown plugin-->
+        <script src="<?php echo G5_THEME_URL ?>/js/waypoints.min.js"></script>
+        <!--digit countdown plugin-->
+        <script src="<?php echo G5_THEME_URL ?>/js/jquery.counterup.min.js" type="text/javascript"></script>
+        <!--on scroll animation-->
+        <script src="<?php echo G5_THEME_URL ?>/js/wow.min.js" type="text/javascript"></script> 
+        <!--owl carousel slider-->
+        <script src="<?php echo G5_THEME_URL ?>/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+        <!--popup js-->
+        <script src="<?php echo G5_THEME_URL ?>/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+		<!-- responsive-slider -->
+		<script src="<?php echo G5_THEME_URL ?>/slide/responsive-slider.js"></script> 
+		<script src="<?php echo G5_THEME_URL ?>/js/raphael-min.js"></script>
+		<script src="<?php echo G5_THEME_URL ?>/morris/morris.min.js"></script> 
+		<script src="<?php echo G5_THEME_URL ?>/js/jquery.backstretch.js"></script>
+	    <script src="<?php echo G5_THEME_URL ?>/js/bootstrap-select.js"></script>
+		<script src="<?php echo G5_THEME_URL ?>/js/custom.js" type="text/javascript"></script>
+
+		<!-- 차트는 이곳에서 수정하세요. -->
+		<script>
+		  $(function () {
+			"use strict";
+
+			//BAR CHART
+			var bar = new Morris.Bar({
+			  element: 'bar-chart',
+			  resize: true,
+			  data: [
+				{y: '2001', a: 100, b: 90},
+				{y: '2002', a: 75, b: 65},
+				{y: '2003', a: 50, b: 40},
+				{y: '2004', a: 75, b: 65},
+				{y: '2015', a: 50, b: 40},
+				{y: '2016', a: 75, b: 65},
+				{y: '2017', a: 100, b: 90}
+			  ],
+			  barColors: ['#32c5d2', '#008998'],
+			  xkey: 'y',
+			  ykeys: ['a', 'b'],
+			  labels: ['CPU', 'DISK'],
+			  hideHover: 'auto'
+			});
+		  });
+		</script>
+
+		<script>
+		$(document).ready(function(){
+			$('.breadcrumb-wrap').backstretch([
+			  "<?php echo G5_THEME_URL?>/img/etc/sub-1.png",
+			  "<?php echo G5_THEME_URL?>/img/etc/sub-2.png",
+			  "<?php echo G5_THEME_URL?>/img/etc/sub-3.png",
+			  "<?php echo G5_THEME_URL?>/img/etc/sub-5.png",
+			  "<?php echo G5_THEME_URL?>/img/etc/sub-6.png"
+			], {
+				fade: 750,
+				duration: 4000
+			});
+		});
+		</script>
+
+    </body>
+</html>
